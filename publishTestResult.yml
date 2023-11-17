@@ -1,0 +1,8 @@
+steps:
+  - task: PublishTestResults@2
+    displayName: Publish Test Results
+    inputs:
+      testResultsFormat: ${{parameters.testResultsFormat}}
+      testResultsFiles: ${{parameters.testResultsFiles}}
+      mergeTestResults: ${{parameters.mergeTestResults}}
+      failTaskOnFailedTests: ${{parameters.failTaskOnFailedTests}}
